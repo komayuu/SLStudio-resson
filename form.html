@@ -1,0 +1,173 @@
+<!-- フォームとは -->
+
+<!-- フォームの作成 -->
+<form action="送信先" method="post">
+  <input type="email" name="email">
+  <input type="password" name="password">
+  <input type="hidden" name="hidden" value="隠し情報">
+  <input type="submit" nalue="ログイン">
+</form>
+<!-- フォームの表示を整える -->
+<form action="送信先" method="post">
+  <div>
+    <label for="email">メールアドレス</label>
+    <input type="email" name="email" id="email">
+  </div>
+  <div>
+    <label for="password">パスワード</label>
+    <input type="password" name="password" id="password">
+  </div>
+  <div>
+    <!-- type="hidden"はブラウザ上非表示 -->
+    <input type="hidden" name="hidden" value="隠し情報">
+    <input type="submit" value="ログイン">
+  </div>
+  
+</form>
+<!-- input要素の属性 -->
+ <!-- type属性 -->
+<table>
+  <thead>
+    <tr>
+      <th>属性値</th>
+      <th>入力内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>text</td>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <td>number</td>
+      <td>数値</td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td>パスワード</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>メールアドレス</td>
+    </tr>
+    <tr>
+      <td>radio</td>
+      <td>ラジオボタンでの選択</td>
+    </tr>
+    <tr>
+      <td>checkbox</td>
+      <td>チェックボックスでの選択</td>
+    </tr>
+    <tr>
+      <td>submit</td>
+      <td>送信ボタン</td>
+    </tr>
+    <tr>
+      <td>hidden</td>
+      <td>ブラウザ上で表示せずに値を送信</td>
+    </tr>
+  </tbody>
+</table>
+ <!-- その他属性(input要素) -->
+<table>
+  <thead>
+    <tr>
+      <th>属性名</th>
+      <th>用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>value</td>
+      <td>入力値を指定。type="submit"の場合はボタンに表示する文字列を指定。</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>フォーム部品の名前を指定。サーバー側で値を受け取る際のキーになる。</td>
+    </tr>
+    <tr>
+      <td>checked</td>
+      <td>チェックボックスやラジオボタンを選択。</td>
+    </tr>
+    <tr>
+      <td>required</td>
+      <td>入力必須。入力せずに送信しようとした場合、警告を表示。</td>
+    </tr>
+    <tr>
+      <td>placeholder</td>
+      <td>入力欄内の入力に関するヒントを示したテキストを指定。</td>
+    </tr>
+  </tbody>
+</table>
+<!-- フォームで使用される要素 -->
+  <!-- セレクトボックス -->
+  <p>
+    <select name="sample">
+      <option value="" selected>-</option>
+      <option value="no1">選択肢1</option>
+      <option value="no2">選択肢2</option>
+      <option value="no3">選択肢3</option>
+    </select>
+  <!-- チェックボックス -->
+  <p>
+    <input type="checkbox" name="sample" id="no1" checked>
+    <label for="no1">選択肢1</label>
+    <input type="checkbox" name="sample" id="no2">
+    <label for="no2">選択肢2</label>
+    <input type="checkbox" name="sample" id="no3">
+    <label for="no3">選択肢3</label>
+  </p>
+  <!-- ラジオボタン -->
+  <p>
+    <input type="radio" name="sample" id="no1" checked>
+    <label for="no1">選択1</label>
+    <input type="radio" name="sample" id="no2">
+    <label for="no2">選択2</label>
+    <input type="radio" name="sample" id="no3">
+    <label for="no3">選択3</label>
+  </p>
+  <!-- テキストエリア -->
+  <p>
+    <textarea name="sample" placeholder="メモを入力" required></textarea> 
+  </p>
+<!-- どの要素にも設定できる特別な要素 -->
+  <!-- グローバル属性 -->
+<table>
+  <thead>
+    <tr>
+      <th>属性名</th>
+      <th>用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>class</td>
+      <td>要素が属する種類や分類を示す名前</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>要素の名前、id(他のものと重複しない固有の名前)</td>
+    </tr>
+    <tr>
+      <td>lang</td>
+      <td>日本語や英語などの言語の種類</td>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>CSSスタイル</td>
+    </tr>
+    <tr>
+      <td>hidden</td>
+      <td>要素を表示しない(※type="hidden"とは別物)</td>
+    </tr>
+    <tr>
+      <td>tabindex</td>
+      <td>タブキーによる移動の順序、フォーカスの可/不可を制御</td>
+    </tr>
+  </tbody>
+</table>
+  <!-- id属性とclass属性 -->
+   <!-- id属性 -->
+    <p id="html">HTMLについて</p>
+   <!-- class属性 -->
+    <p class="language basic">HTMLについて</p>
