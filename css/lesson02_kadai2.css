@@ -1,0 +1,12 @@
+h1 {
+  color: white;
+  background-color: dimgray;
+}
+
+.field {
+  background-color: darkgray;
+}
+
+input[type="text"] {
+  width: 400px
+}
