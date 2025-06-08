@@ -31,3 +31,21 @@ textarea {
   border-radius: 5px;
   border: #000 solid 1px;
 }
+
+input[type="submit"] {
+  background-color: #525252;
+  color: #FFF;
+  font-weight: bold;
+  display: block;
+  width: 80px;
+  padding: 3px 15px;
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 2px;
+  border: #000 solid 1px;
+}
+
+input[type="submit"]:hover {
+  background-color: #808080;
+  color: #c3c3c3;
+}
