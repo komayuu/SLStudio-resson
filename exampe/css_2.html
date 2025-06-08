@@ -1,0 +1,90 @@
+<!-- color:文字色を指定 -->
+/* 全て赤色です */
+セレクタ {
+  color: red; /* 大文字小文字区別しない RED Red */
+  color: #FF0000; /* #以降は2桁ごとに red green blue を表す */
+  color: #F00; /* 2桁ごとにFF 00 00 と左右の値が同じであれば3桁に省略できる */
+  color: rgb(255, 0, 0); /* rgb(red, green, blue) */
+  color: hsl(0, 100%, 50%); /* hsl(hue (色相), saturation (彩度), lightness (輝度)) */
+}
+
+<!-- background-color:背景色を指定 -->
+セレクタ {
+  background-color: black;
+  background-color: #0000FF;
+}
+
+<!-- font-size:文字の大きさを指定 -->
+セレクタ {
+  font-size: 16px;
+  font-size: 0.75em; /* 親要素の75% */
+  font-size: 2rem; /* html要素の200% */
+}
+
+<!-- font-weight:文字の太さを指定 -->
+セレクタ {
+    font-weight: bold;
+    font-weight: 700; /* boldと同様 */
+}
+
+<!-- text-align:文字の水平方向の配置を指定 -->
+セレクタ {
+    text-align: left; /* 左揃え */
+    text-align: right; /* 右揃え */
+    text-align: center; /* 中央揃え */
+}
+
+<!-- border-radius:要素の角を丸くする -->
+セレクタ {
+    border-radius: 10px; /* 半径10pxの角丸 */
+}
+
+<!-- overflow:テキストが親要素に収まらない場合の挙動を指定 -->
+セレクタ {
+    overflow: visible; /* 表示 */
+    overflow: hidden; /* 非表示 */
+    overflow: scroll; /* スクロール表示 */
+}
+
+<!-- display:要素をブロック要素とインライン要素のどちらとして扱うか、およびその子要素のために使用されるレイアウトを指定 -->
+セレクタ {
+    display: block; /* ブロック要素 */
+    display: inline; /* インライン要素 */
+    display: none; /* 非表示 */
+}
+
+<!-- visibility:要素の表示/非表示を指定 -->
+セレクタ {
+    visibility: visible; /* 表示 */
+    visibility: hidden; /* 非表示 */
+}
+
+<!-- width,height:ブロックレベル要素のサイズを指定 -->
+セレクタ {
+    width: 120px;
+    height: 50%;
+}
+セレクタ {
+    max-width: 360px;
+    min-width: 200px;
+}
+<!-- list-style-type: -->
+セレクタ {
+    list-style-type: none; /* 非表示 */
+    list-style-type: disc; /* 塗りつぶされた円（●） */
+    list-style-type: square; /* 塗りつぶされた四角（■） */
+    list-style-type: decimal; /* 10進数（1、2、3…） */
+}
+
+<!-- float:要素を包含ブロックの左右どちらかの側に沿うように設置し、テキストやインライン要素がその周りを回りこめるように定義、複数ある場合は、上から順番に定義 -->
+<div class="left">左</div><!-- 左寄せに配置される -->
+<div class="right">右1</div><!-- 右1が一番右寄せに配置される-->
+<div class="right">右2</div><!-- 右1の左側に配置される -->
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+}
+.left { float:left; }
+.right { float:right; }
