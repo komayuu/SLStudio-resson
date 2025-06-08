@@ -1,0 +1,33 @@
+h1 {
+  background-color: #525252;
+  color: #FFF;
+  width: 480px;
+  padding: 12px;
+  margin: 0;
+}
+
+form {
+  background-color: #BBB;
+  width: 480px;
+  padding: 12px;
+}
+
+label {
+  width: 120px;
+  display: block;
+  float: left;
+}
+
+div {
+  margin: 10px 0;
+}
+
+input,
+select,
+textarea {
+  width: 280px;
+  padding: 2px 0 2px 4px;
+  height: 24px;
+  border-radius: 5px;
+  border: #000 solid 1px;
+}

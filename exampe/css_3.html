@@ -1,0 +1,66 @@
+<!-- padding(余白) -->
+padding: 10px; /* 全方向 */
+padding: 10px 20px; /* 上下 左右 */
+padding: 10px 20px 30px; /* 上 左右 下 */
+padding: 10px 20px 30px 40px; /* 上 右 下 左（上から時計回り）*/
+
+セレクタ {
+  padding-top: 10px; /* 上 */
+  padding-right: 10px; /* 右 */
+  padding-bottom: 10px; /* 下 */
+  padding-left: 10px; /* 左 */
+}
+
+<!-- マージン(間隔) -->
+margin: 10px; /* 全方向 */
+margin: 10px 20px; /* 上下 左右 */
+margin: 10px 20px 30px; /* 上 左右 下 */
+margin: 10px 20px 30px 40px; /* 上 右 下 左（上から時計回り）
+
+セレクタ {
+  margin-top: 10px; /* 上 */
+  margin-right: 10px; /* 右 */
+  margin-bottom: 10px; /* 下 */
+  margin-left: 10px; /* 左 */
+}
+
+/* 中央寄せ */
+セレクタ {
+    margin-left: auto;
+    margin-right: auto;
+    /* または */
+    margin: 0 auto; /* 上下が0 左右がauto */
+}
+/* 右寄せ */
+セレクタ {
+    margin-left: auto;
+    margin-right: 0;
+}
+<!-- ボーダー(枠線) -->
+セレクタ {
+  border: 1px solid #32a1ce; /* 太さ1px・1本線・薄い青色 */
+  border: medium dashed green; /* mediumは標準の太さ・破線・緑色 */
+}
+
+セレクタ {
+  border-top: solid; /* 要素の上に1本線 */
+  border-right: double red; /* 要素の右に赤色の2本線 */
+  border-bottom: 10px dotted; /* 要素の下に太さ10pxの点線 */
+  border-left: thin solid #FF0; /* 要素の左に黄色で標準より細い太さの1本線 */
+}
+
+# solid １本線
+# double ２本線
+# dashed 破線
+# dotted 点線
+# none 非表示
+# display ブロック要素とかできる
+
+<!-- box-sizingプロパティを使うことでwidth,heightの値にborder,paddingの値を内包できる-->
+div {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
+}

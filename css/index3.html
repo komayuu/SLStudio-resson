@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>サンプル</title>
+    <link rel="stylesheet" href="lesson03_kadai.css">
+</head>
+<body>
+    <h1>クラス名簿登録</h1>
+    <form action="sample.html" method="post" name="add_form">
+        <div>
+            <label for="name">名前</label>
+            <input type="text" name="name" id="name" placeholder="名前を入力" required>
+        </div>
+        <div>
+            <label for="nickname">ニックネーム</label>
+            <input type="text" name="nickname" id="nickname" placeholder="ニックネームを入力">
+        </div>
+        <div>
+            <label for="birth_date">生年月日</label>
+            <input type="date" name="birth_date" id="birth_date" required>
+        </div>
+        <div>
+            <label for="activity">部活動</label>
+            <select name="activity" id="activity">
+                <option value="1">野球</option>
+                <option value="2">水泳</option>
+                <option value="3">弓道</option>
+                <option value="4" selected>帰宅</option>
+            </select>
+        </div>
+        <div>
+            <label for="favorite_num">好きな数字</label>
+            <input type="number" name="favorite_num" id="favorite_num" value="1" placeholder="数字を入力">
+        </div>
+        <div>
+            <label for="introduction">自己紹介</label>
+            <textarea name="introduction" id="introduction" placeholder="自己紹介を入力"></textarea>
+        </div>
+        <div>
+            <input type="submit" name="send" value="送信">
+        </div>
+    </form>
+</body>
+</html>
